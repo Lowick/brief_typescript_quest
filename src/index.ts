@@ -20,10 +20,7 @@ export class Hero{
     }
 
     isAlive():boolean{
-        if(this.life > 0){
-            return true}
-                else{
-            } return false
+        return this.life > 0;
         }
 
         
@@ -43,8 +40,8 @@ export class Hero{
     this.power = power;
   }
 
-  setLife(life: number) {
-    this.life = life;
+  setLife(newlife: number) {
+    this.life = newlife;
   }
     
     }
@@ -76,7 +73,7 @@ export class HeroAxe extends Hero {
        opponent.setLife( opponent.getLife() -(this.getPower() * 2 + this.weapon.damage));
       }
         else
-      {opponent.setLife(opponent.getLife()- (this.getPower()+ this.weapon.damage));
+      {opponent.setLife(opponent.getLife()-(this.getPower()+this.weapon.damage));
     } 
   }
 }
@@ -90,7 +87,7 @@ export class HeroSword extends Hero {
   attack(opponent: Hero){
     if( opponent instanceof HeroSpear){
       opponent.setLife( opponent.getLife() -(this.getPower() * 2 + this.weapon.damage))
-    } else{opponent.setLife(opponent.getLife()-(this.getPower()+this.weapon.damage));
+    } else{opponent.setLife(opponent.getLife()-(this.getPower()+this.weapon.damage));;
        
     } 
         }        
@@ -105,7 +102,7 @@ export class HeroSpear extends Hero {
   attack(opponent: Hero){
     if( opponent instanceof HeroAxe){
        opponent.setLife( opponent.getLife() -(this.getPower() * 2 + this.weapon.damage))
-    } else{opponent.setLife(opponent.getLife()-(this.getPower()+this.weapon.damage));
+    } else{opponent.setLife(opponent.getLife()-(this.getPower()+this.weapon.damage));;
     
     } 
         }        

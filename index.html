@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./typescript-quest-derdesdev-main/dist/index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="game">
+    
+        <h1>Gladiator</h1>
+    
+        <h2>Fight</h2>
+    
+        <div class="fighter1">
+    
+            <select onchange="onSelectChange(event, 'fighter1')">
+                <option value="">Select your player</option>
+                <option value="option1">Ryu</option>
+                <option value="option2">Steeve</option>
+                <option value="option3">Balrog</option>
+            </select>
+    
+    
+        </div>
+    
+        <div class="fighter2">
+            <select onchange="onSelectChange(event, 'fighter2')">
+                <option value="">Select your player</option>
+                <option value="option1">Ryu</option>
+                <option value="option2">Steeve</option>
+                <option value="option3">Balrog</option>
+            </select>
+    
+            <div class="debut">
+    
+                <button id="start">start</button>
+            </div>
+    
+        </div>
+    
+</body>
+</html>
