@@ -70,7 +70,16 @@ console.log(a+b);
 
 - Qu'est ce qu'une classe ?
 
+```
+une classe est une structure de programmation orientée objet qui permet de définir un modèle ou un plan pour créer des objets.
+```
+
 - Qu'est ce qu'un constructeur de classe ?
+
+```
+Un constructeur de classe est une méthode spéciale définie dans une classe. Le rôle principal d'un constructeur est d'initialiser les propriétés d'un objet lorsque vous créez une nouvelle instance de cette classe.
+```
+
 - Qu'est ce qu'une instance de classe ?
 
 On appelle instace de classe, un objet avec un comportement et un état, tous définis par la classe.
@@ -99,6 +108,10 @@ public, private, protected
 ## Level 3
 
 - Comment faire pour diviser notre programme en différents fichiers ? (ex: une classe dans un fichier que j'importe dans un autre)
+
+-En créant plusieurs modules
+-Utilisez l'importation et l'exportation
+
 - Qu'est ce que l'héritage ?
 
 L'heritage permet à un programme de creer une nouvelle classe à partir d'une classe existante, elle en prend les propriétés et les comportement.
